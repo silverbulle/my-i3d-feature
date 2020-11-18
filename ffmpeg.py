@@ -15,6 +15,6 @@ for video in videos:
     if not os.path.exists(frame_path):
         os.makedirs(frame_path)
     print("extractor {} : {}".format(count, name))
-    os.system("ffmpeg -i" + os.path.join(video_path, video) + " -r 25 " + frame_path + "/%d.jpg")
+    os.system("ffmpeg -i " + os.path.join(video_path, video) + " -r 25 " + frame_path + "/%d.jpg")
     # cmd = 'ffmpeg -i $fi -r 25 /home/silverbullet/Videos/MSR_Video_Description_Corpus/YouTubeClips-25fps/%d.jpg'
     print("process success!!!")
